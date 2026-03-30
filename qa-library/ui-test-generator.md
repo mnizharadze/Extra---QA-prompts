@@ -71,3 +71,33 @@ LoginPage class
 login.spec.js
 Clean POM usage
 Assertions for success
+
+### 🔄 Self-Healing Requirement (IMPORTANT)
+
+* Use **resilient locator strategies**
+* Prefer multiple locator fallbacks:
+
+  * प्राथमिक locator (e.g. data-testid)
+  * fallback locator (text, role, css)
+
+Example:
+
+```javascript
+const loginBtn = page
+  .locator('[data-testid="login-btn"]')
+  .or(page.locator('button:has-text("Login")'));
+```
+
+* Avoid brittle selectors (nth-child, deep CSS)
+* Make tests resistant to UI changes
+
+---
+
+### 🧠 Adaptability
+
+* Write code in a way that allows:
+
+  * Easy locator updates
+  * Minimal test breakage
+* Assume UI may change and structure code accordingly
+
