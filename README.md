@@ -113,7 +113,10 @@ POST /api/login
 # 🔄 Self-Healing Test Mechanism
 
 This project includes an **AI-based test update system**.
-
+Prompt library is designed to support self-healing by:
+- Generating resilient locators
+- Adapting tests to UI changes
+- Enabling easy regeneration of broken selectors
 ---
 
 ## ⚙️ როგორ მუშაობს
