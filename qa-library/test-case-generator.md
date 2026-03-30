@@ -52,3 +52,8 @@ TC-002: Missing email
 TC-003: Invalid password format
 TC-004: Duplicate email
 TC-005: Empty form submission
+
+### 🔄 Maintainability
+
+* Test cases should be adaptable to UI/API changes
+* Avoid overly specific UI-dependent steps
