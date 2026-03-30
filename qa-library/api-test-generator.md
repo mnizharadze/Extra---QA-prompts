@@ -74,3 +74,11 @@ test.describe("POST /api/login", ...)
 test("should login successfully", ...)
 test("should fail with invalid password", ...)
 test("should fail with empty body", ...)
+
+### 🔄 Stability Consideration
+
+* Avoid hardcoded values where possible
+* Validate structure instead of exact full response (if dynamic)
+* Make tests resilient to minor API changes
+
+
